@@ -8,8 +8,8 @@
   int rightEyeX, rightEyeY, rightEyeDiameter;
   int noseX1, noseY1, noseX2, noseY2, noseX3, noseY3;
   float mouthX1, mouthY1, mouthX2, mouthY2, mouthThick;
-  color red = #FF0303;
-  color measlesColor = red;
+  color pink = #FF00FB;
+  color measlesColor = pink;
   float measlesX, measlesY, measlesDiameter;
 
   void setup() {
@@ -32,11 +32,11 @@
   strokeWeight(mouthThick);
   line(mouthX1, mouthY1, mouthX2, mouthY2);
   strokeWeight(reset);
-  } //End setup()
+} //End setup()
   
  void draw() {
     measlesX = random(width);
-    measlesY= random(height);
+    measlesY = random(height);
     measlesDiameter = random(height*1/20, height*1/10);
     fill(measlesColor);
     //Parameters are randomly set ;)
@@ -44,7 +44,7 @@
     fill(reset);
   } //End draw()
   
-  void keyPresses() {
+  void keyPressed() {
   } //End keypressed()
   
   void mousePressed() {
