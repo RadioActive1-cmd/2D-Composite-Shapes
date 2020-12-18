@@ -3,17 +3,18 @@ color black=#000000, white=#FFFFFF, yellow=#FFF73C, purple=#FF00FB, yellowNight=
 //Note about Night Mode Colours: Purple retains blue so not pink
 int thin, thick;
 //
-size(900, 400); //fullScreen(); //displayWidth, displayHeight
+size(1920,1080); //fullScreen(); //displayWidth, displayHeight
 //println("Monitor Display Width", displayWidth, " and Display Height", displayHeight);
 //
 x = width*1/4;
 y = height*1/4;
 rectWidth = width*1/2;
-thin = width*1/100;
+rectHeight = height*1/2;
+thin = width*1/50;
 thick = thin*2;
 //
-background(black)
-stroke(yellowNight); //ink colour
+background(white);
+stroke(black); //ink colour
 strokeWeight(thick); //thin & thick
 //fill(purpleNight);
 //fill(255, 0, 200); //purpleNight //RGB

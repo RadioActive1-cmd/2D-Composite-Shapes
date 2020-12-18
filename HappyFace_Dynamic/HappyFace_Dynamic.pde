@@ -1,9 +1,9 @@
 //Global Variables
   int reset;
   int rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
-  int circleNoseX, circleNoseY, cirleNoseWidth, circleNoseHieght;
+  int circleNoseX, circleNoseY, circleNoseWidth, circleNoseHeight;
 //
-  int faceX, faceY, FaceDiameter, faceRadius;
+  int faceX, faceY, faceDiameter, faceRadius;
   int leftEyeX, leftEyeY, leftEyeDiameter;
   int rightEyeX, rightEyeY, rightEyeDiameter;
   int noseX1, noseY1, noseX2, noseY2, noseX3, noseY3;
@@ -21,7 +21,7 @@
   //
   //Initial Visual Data, etc. (i.e. Face)
   rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
-  ellipse(faceX, faceY, faceDiameter, faceDiamerter);
+  ellipse(faceX, faceY, faceDiameter, faceDiameter);
   //
   ellipse(leftEyeX, leftEyeY, leftEyeDiameter, leftEyeDiameter);
   ellipse(rightEyeX, rightEyeY, rightEyeDiameter, rightEyeDiameter);
@@ -35,12 +35,12 @@
   } //End setup()
   
  void draw() {
-    mesaslesX = random(width);
-    meaaslesY= random(height);
+    measlesX = random(width);
+    measlesY= random(height);
     measlesDiameter = random(height*1/20, height*1/10);
     fill(measlesColor);
     //Parameters are randomly set ;)
-    ellipse(measlesX, measelesY, measlesDiameter, measlwsDiameter);
+    ellipse(measlesX, measlesY, measlesDiameter, measlesDiameter);
     fill(reset);
   } //End draw()
   

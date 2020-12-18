@@ -10,7 +10,7 @@ void populatingVariables() {
   faceY = rectFaceY + faceRadius;
   //
   leftEyeX = width*3/8;
-  leftEyeY = height*1/4:
+  leftEyeY = height*1/4;
   leftEyeDiameter = height/7;
   rightEyeX = width*5/8;
   rightEyeY = leftEyeY;
@@ -31,7 +31,7 @@ void populatingVariables() {
   mouthX1 = leftEyeX;
   mouthY1 = height*3/4;
   mouthX2 = rightEyeX;
-  MouthY2 = mouthY1;
+  mouthY2 = mouthY1;
   mouthThick = height*1/20;
   reset =1;
 } //End populatingVariables()
